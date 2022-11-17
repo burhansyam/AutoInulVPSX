@@ -163,3 +163,4 @@ rm -rf dns-cf.sh
 rm -rf update-package.sh
 rm -rf update-package.sh.*
 
+apt remove squid -y 
