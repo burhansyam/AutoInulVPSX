@@ -146,7 +146,7 @@ clear
 wget -q -O /usr/bin/removelog "https://raw.githubusercontent.com/hidessh99/HIDE-package/main/log.sh" && chmod +x /usr/bin/removelog
 #cronjob
 echo "30 * * * * root removelog" >> /etc/crontab
-wget -q https://raw.githubusercontent.com/hidessh99/seller-pub/main/dns-cf.sh;chmod +x dns-cf.sh;./dns-cf.sh
+wget -q https://raw.githubusercontent.com/hidessh99/Package-tambahan-Seller/main/dns-cf.sh;chmod +x dns-cf.sh;./dns-cf.sh
 sleep 2
 clear
 

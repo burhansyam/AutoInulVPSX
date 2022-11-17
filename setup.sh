@@ -73,7 +73,7 @@ wget -q -O /usr/bin/cek-vless "https://raw.githubusercontent.com/hidessh99/proje
 
 #trojan
 wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/xray/hide-add-tr.sh" && chmod +x /usr/bin/add-tr
-wget -q -O /usr/bin/addtrgo "https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/xray/hide-add-tr.sh" && chmod +x /usr/bin/aaddtrgo
+wget -q -O /usr/bin/addtrgo "https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/xray/hide-add-tr.sh" && chmod +x /usr/bin/addtrgo
 
 wget -q -O /usr/bin/del-tr "https://raw.githubusercontent.com/bracoli/v4/main/xray/del-tr.sh" && chmod +x /usr/bin/del-tr
 wget -q -O /usr/bin/renew-tr "https://raw.githubusercontent.com/bracoli/v4/main/xray/renew-tr.sh" && chmod +x /usr/bin/renew-tr
@@ -174,6 +174,7 @@ rm -rf hideinst-xrayv5.sh.*
 rm -rf installmu.sh.*
 rm -rf setup.sh
 rm -rf setup.sh.*
+rm -rf installer-badvpn.sh
 secs_to_human "$(($(date +%s) - ${start}))" | tee -a log-install.txt
 echo -e "
 "
