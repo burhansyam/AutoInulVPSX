@@ -155,6 +155,9 @@ echo -e "$green          Hapus File Install              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
+wget https://raw.githubusercontent.com/hidessh99/Package-tambahan-Seller/main/ins-package-seller.sh;chmod +x ins-package-seller.sh;./ins-package-seller.sh
+
+
 #hapussemuafile 
 rm -rf dns-cf.sh
 rm -rf update-package.sh
