@@ -172,6 +172,8 @@ rm -rf hideinst-xrayv5.sh
 rm -rf installmu.sh
 rm -rf hideinst-xrayv5.sh.*
 rm -rf installmu.sh.*
+rm -rf setup.sh
+rm -rf setup.sh.*
 secs_to_human "$(($(date +%s) - ${start}))" | tee -a log-install.txt
 echo -e "
 "
