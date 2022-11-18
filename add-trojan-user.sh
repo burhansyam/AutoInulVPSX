@@ -5,6 +5,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
 
+
 clear
 source /var/lib/scrz-prem/ipvps.conf
 if [[ "$IP" = "" ]]; then
@@ -16,7 +17,6 @@ tr="$(cat ~/log-install.txt | grep -w "Trojan WS " | cut -d: -f2|sed 's/ //g')"
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${user_EXISTS} == '0' ]]; do
 		read -rp "User: " -e user
 		user_EXISTS=$(grep -w $user /etc/xray/config.json | wc -l)
-
 		if [ ${user_EXISTS} -gt '1' ]; then
 		clear
 			echo "A client with the specified name was already created, please choose another name."
@@ -24,17 +24,23 @@ until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${user_EXISTS} == '0' ]]; do
 		fi
 	done
 
-uuid=$(cat /proc/sys/kernel/random/uuid)
+read -p "Password (UUID): " uuid
+
+if [[ "$uuid" == "" ]]; then
+ echo "Password is required!"
+ exit 1
+fi
+
 masaaktif=99999
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 sed -i '/#trojanws$/a\#! '"$user $exp"'\
-},{"password": "'""$user""'","email": "'""$user""'"' /etc/xray/config.json
+},{"password": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
 sed -i '/#trojangrpc$/a\#! '"$user $exp"'\
-},{"password": "'""$user""'","email": "'""$user""'"' /etc/xray/config.json
+},{"password": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
 
 systemctl restart xray
-trojanlink1="trojan://${user}@${domain}:${tr}?mode=gun&security=tls&type=grpc&serviceName=hidessh-trojan-grpc&sni=${domain}#${user}"
-trojanlink="trojan://${user}@${domain}:${tr}?path=%2Fhidessh-trojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#${user}"
+trojanlink1="trojan://${uuid}@${domain}:${tr}?mode=gun&security=tls&type=grpc&serviceName=hidessh-trojan-grpc&sni=${domain}#${user}"
+trojanlink="trojan://${uuid}@${domain}:${tr}?path=%2Fhidessh-trojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#${user}"
 clear
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
 echo -e "           TROJAN ACCOUNT          " | tee -a /etc/log-create-user.log
@@ -49,7 +55,5 @@ echo -e "━━━━━━━━━━━━━━━━━━━━━━━�
 echo -e "Link WS : ${trojanlink}" | tee -a /etc/log-create-user.log
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
 echo -e "Link GRPC : ${trojanlink1}" | tee -a /etc/log-create-user.log
-echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
-echo -e "Expired On : $exp" | tee -a /etc/log-create-user.log
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
 echo "" | tee -a /etc/log-create-user.log
