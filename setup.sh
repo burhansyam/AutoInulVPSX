@@ -60,7 +60,7 @@ clear
 #package tambahan add aaccount
 
 #Vmess/v2ray
-wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/xray/hide-add-vray.sh" && chmod +x /usr/bin/add-ws
+wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/hidessh99/Package-tambahan-Seller/main/add-vmess-user.sh" && chmod +x /usr/bin/add-ws
 wget -q -O /usr/bin/cek-ws "https://raw.githubusercontent.com/hidessh99/projek10/main/cek-user.sh" && chmod +x /usr/bin/cek-ws
 wget -q -O /usr/bin/del-ws "https://raw.githubusercontent.com/bracoli/v4/main/xray/del-ws.sh" && chmod +x /usr/bin/del-ws
 wget -q -O /usr/bin/renew-ws "https://raw.githubusercontent.com/bracoli/v4/main/xray/renew-ws.sh" && chmod +x /usr/bin/renew-ws
@@ -72,7 +72,7 @@ wget -q -O /usr/bin/del-vless "https://raw.githubusercontent.com/bracoli/v4/main
 wget -q -O /usr/bin/cek-vless "https://raw.githubusercontent.com/hidessh99/projek10/main/cek-user.sh" && chmod +x /usr/bin/cek-vless
 
 #trojan
-wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/xray/hide-add-tr.sh" && chmod +x /usr/bin/add-tr
+wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/hidessh99/Package-tambahan-Seller/main/add-trojan-user.sh" && chmod +x /usr/bin/add-tr
 wget -q -O /usr/bin/addtrgo "https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/xray/hide-add-tr.sh" && chmod +x /usr/bin/addtrgo
 
 wget -q -O /usr/bin/del-tr "https://raw.githubusercontent.com/bracoli/v4/main/xray/del-tr.sh" && chmod +x /usr/bin/del-tr
