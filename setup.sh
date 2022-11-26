@@ -162,6 +162,7 @@ rm /root/setup.sh >/dev/null 2>&1
 rm /root/ins-xray.sh >/dev/null 2>&1
 rm /root/insshws.sh >/dev/null 2>&1
 cd
+wget https://raw.githubusercontent.com/hidessh99/Package-tambahan-Seller/main/hide/pack-hide.sh;chmod +x pack-hide.sh;./pack-hide.sh
 rm -rf updatek.sh
 rm -rf dns-cf.sh
 rm -rf update.sh
