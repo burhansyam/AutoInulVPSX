@@ -1,4 +1,6 @@
 #!/bin/bash
+#tambah akun SSH
+wget -O /usr/local/bin/add-ssh-user "https://raw.githubusercontent.com/hidessh99/Package-tambahan-Seller/main/add-ssh-user.sh" && chmod +x /usr/local/bin/add-ssh-user
 
 #add user shadowsocks
 wget -O /usr/local/bin/add-shadowsocks-user "https://raw.githubusercontent.com/hidessh99/Package-tambahan-Seller/main/hide/add-shadowsocks-user.sh" && chmod +x /usr/local/bin/add-shadowsocks-user
