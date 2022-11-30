@@ -14,4 +14,4 @@ wget -O /usr/local/bin/del-trojan-user "https://raw.githubusercontent.com/burhan
 
 #hapus file
 cd
-rm -rf ins-package-seller.sh
+rm -rf installer.sh
