@@ -53,7 +53,7 @@ echo -e "$green          Install Websocket              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 sleep 2
 clear
 
@@ -62,30 +62,30 @@ clear
 #Vmess/v2ray
 wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/add-vmess-user.sh" && chmod +x /usr/bin/add-ws
 wget -q -O /usr/bin/cek-ws "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/cek-user.sh" && chmod +x /usr/bin/cek-ws
-wget -q -O /usr/bin/del-ws "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/del-ws.sh" && chmod +x /usr/bin/del-ws
-wget -q -O /usr/bin/renew-ws "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/renew-ws.sh" && chmod +x /usr/bin/renew-ws
+wget -q -O /usr/bin/del-ws "https://raw.githubusercontent.com/bracoli/v4/main/xray/del-ws.sh" && chmod +x /usr/bin/del-ws
+wget -q -O /usr/bin/renew-ws "https://raw.githubusercontent.com/bracoli/v4/main/xray/renew-ws.sh" && chmod +x /usr/bin/renew-ws
 
 #Vless
 wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/add-vless.sh" && chmod +x /usr/bin/add-vless
 wget -q -O /usr/bin/renew-vless "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/renew-vless.sh" && chmod +x /usr/bin/renew-vless
 wget -q -O /usr/bin/del-vless "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/del-vless.sh" && chmod +x /usr/bin/del-vless
-wget -q -O /usr/bin/cek-vless "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/cek-user.sh" && chmod +x /usr/bin/cek-vless
+wget -q -O /usr/bin/cek-vless "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/cek-user.sh" && chmod +x /usr/bin/cek-vless
 
 #trojan
-wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/add-trojan-user.sh" && chmod +x /usr/bin/add-tr
-wget -q -O /usr/bin/addtrgo "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/add-tr.sh" && chmod +x /usr/bin/addtrgo
+wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/add-trojan-user.sh" && chmod +x /usr/bin/add-tr
+wget -q -O /usr/bin/addtrgo "https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/xray/hide-add-tr.sh" && chmod +x /usr/bin/addtrgo
 
-wget -q -O /usr/bin/del-tr "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/del-tr.sh" && chmod +x /usr/bin/del-tr
-wget -q -O /usr/bin/renew-tr "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/renew-tr.sh" && chmod +x /usr/bin/renew-tr
-wget -q -O /usr/bin/cek-tr "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/cek-user.sh" && chmod +x /usr/bin/cek-tr
+wget -q -O /usr/bin/del-tr "https://raw.githubusercontent.com/bracoli/v4/main/xray/del-tr.sh" && chmod +x /usr/bin/del-tr
+wget -q -O /usr/bin/renew-tr "https://raw.githubusercontent.com/bracoli/v4/main/xray/renew-tr.sh" && chmod +x /usr/bin/renew-tr
+wget -q -O /usr/bin/cek-tr "https://raw.githubusercontent.com/hidessh99/projek10/main/cek-user.sh" && chmod +x /usr/bin/cek-tr
 
 #shadowsoksks
-wget -q -O /usr/bin/add-ssws "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/add-ss.sh" && chmod +x /usr/bin/add-ssws
+wget -q -O /usr/bin/add-ssws "https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/xray/hide-add-ss.sh" && chmod +x /usr/bin/add-ssws
 
 
-wget -q -O /usr/bin/del-user "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/del-ws.sh" && chmod +x /usr/bin/del-user
-wget -q -O /usr/bin/renew-user "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/renew-ws.sh" && chmod +x /usr/bin/renew-user
-wget -q -O /usr/bin/crtv2ray "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/crt.sh" && chmod +x /usr/bin/crtv2ray
+wget -q -O /usr/bin/del-user "https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/xray/del-ws.sh" && chmod +x /usr/bin/del-user
+wget -q -O /usr/bin/renew-user "https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/xray/renew-ws.sh" && chmod +x /usr/bin/renew-user
+wget -q -O /usr/bin/crtv2ray "https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/xray/crt.sh" && chmod +x /usr/bin/crtv2ray
 
 sleep 2
 
