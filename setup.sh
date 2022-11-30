@@ -60,10 +60,10 @@ clear
 #package tambahan add aaccount
 
 #Vmess/v2ray
-wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/add-vmess-user.sh" && chmod +x /usr/bin/add-ws
-wget -q -O /usr/bin/cek-ws "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/cek-user.sh" && chmod +x /usr/bin/cek-ws
+wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/add-vmess-user.sh" && chmod +x /usr/bin/add-ws
+wget -q -O /usr/bin/cek-ws "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/cek-user.sh" && chmod +x /usr/bin/cek-ws
 wget -q -O /usr/bin/del-ws "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/del-ws.sh" && chmod +x /usr/bin/del-ws
-wget -q -O /usr/bin/renew-ws "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/renew-ws.sh" && chmod +x /usr/bin/renew-ws
+wget -q -O /usr/bin/renew-ws "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/renew-ws.sh" && chmod +x /usr/bin/renew-ws
 
 #Vless
 wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/hide-add-vless.sh" && chmod +x /usr/bin/add-vless
@@ -77,7 +77,7 @@ wget -q -O /usr/bin/addtrgo "https://raw.githubusercontent.com/burhansyam/AutoIn
 
 wget -q -O /usr/bin/del-tr "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/del-tr.sh" && chmod +x /usr/bin/del-tr
 wget -q -O /usr/bin/renew-tr "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/renew-tr.sh" && chmod +x /usr/bin/renew-tr
-wget -q -O /usr/bin/cek-tr "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/cek-user.sh" && chmod +x /usr/bin/cek-tr
+wget -q -O /usr/bin/cek-tr "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/cek-user.sh" && chmod +x /usr/bin/cek-tr
 
 #shadowsoksks
 wget -q -O /usr/bin/add-ssws "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/hide-add-ss.sh" && chmod +x /usr/bin/add-ssws
