@@ -2,20 +2,24 @@
 >apt update && apt upgrade -y && update-grub && sleep 2 && reboot
 
 
->wget https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/update-package.sh;chmod +x update-package.sh;./update-package.sh
+```
+wget https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/update-package.sh;chmod +x update-package.sh;./update-package.sh
+```
 
->reboot
-
-`wget https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh`
-
-jika nginx error
+```
+reboot
+```
+```
+wget https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh`
+```
+# Jika nginx error
 ```
 wget -O /etc/xray/xray.crt https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/xray.crt
 wget -O /etc/xray/xray.key https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/xray.key
 service nginx restart
 ```
 
-edit manual
+# Edit manual sesuai kebutuhan
 
 nano /var/lib/scrz-prem/ipvps.conf
 
