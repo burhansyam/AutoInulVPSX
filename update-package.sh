@@ -155,7 +155,7 @@ echo -e "$green          Hapus File Install              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/ins-package-seller.sh;chmod +x ins-package-seller.sh;./ins-package-seller.sh
+wget https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/installer.sh;chmod +x installer.sh;./installer.sh
 
 
 #hapussemuafile 
