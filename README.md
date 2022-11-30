@@ -1,8 +1,8 @@
-# Install
-"apt update && apt upgrade -y && update-grub && sleep 2 && reboot"
+# Auto Install Xray
+>apt update && apt upgrade -y && update-grub && sleep 2 && reboot
 
 
-"wget https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/update-package.sh;chmod +x update-package.sh;./update-package.sh"
+>wget https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/update-package.sh;chmod +x update-package.sh;./update-package.sh
 
 reboot
 
