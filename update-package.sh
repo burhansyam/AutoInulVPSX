@@ -132,7 +132,7 @@ echo -e "$green          Install package              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget -q https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/tools.sh;chmod +x tools.sh;./tools.sh
 cd
 rm tools.sh
 clear
@@ -143,10 +143,10 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 sleep 2
 clear
 #remove log
-wget -q -O /usr/bin/removelog "https://raw.githubusercontent.com/hidessh99/HIDE-package/main/log.sh" && chmod +x /usr/bin/removelog
+wget -q -O /usr/bin/removelog "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/logrm.sh" && chmod +x /usr/bin/removelog
 #cronjob
 echo "30 * * * * root removelog" >> /etc/crontab
-wget -q https://raw.githubusercontent.com/hidessh99/seller-pub/main/dns-cf.sh;chmod +x dns-cf.sh;./dns-cf.sh
+wget -q https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/dns-cf.sh;chmod +x dns-cf.sh;./dns-cf.sh
 sleep 2
 clear
 
@@ -155,7 +155,7 @@ echo -e "$green          Hapus File Install              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/hidessh99/Package-tambahan-Seller/main/ins-package-seller.sh;chmod +x ins-package-seller.sh;./ins-package-seller.sh
+wget https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/ins-package-seller.sh;chmod +x ins-package-seller.sh;./ins-package-seller.sh
 
 
 #hapussemuafile 
