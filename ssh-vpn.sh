@@ -119,7 +119,7 @@ apt -y install nginx
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/bracoli/v4/main/ssh/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/tools/nginx.conf"
 mkdir -p /home/vps/public_html
 /etc/init.d/nginx restart
 
@@ -129,7 +129,7 @@ wget -O /usr/bin/badvpn-udpgw "https://gitlab.com/hidessh/baru/-/raw/main/badvpn
 chmod +x /usr/bin/badvpn-udpgw
 
 #installer badvpn
-wget https://raw.githubusercontent.com/hidessh99/projectku/main/badvpn/installer-badvpn.sh && chmod +x installer-badvpn.sh && ./installer-badvpn.sh
+wget https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/badvpn/installer-badvpn.sh && chmod +x installer-badvpn.sh && ./installer-badvpn.sh
 
 #sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local
 #sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500' /etc/rc.local
@@ -226,14 +226,14 @@ echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 sleep 1cd
 # Custom Banner SSH
 echo "================  Banner ======================"
-wget -O /etc/issue.net "https://gitlab.com/hidessh/baru/-/raw/main/banner.conf"
+wget -O /etc/issue.net "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/tools/banner.conf"
 chmod +x /etc/issue.net
 
 echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
 echo "DROPBEAR_BANNER="/etc/issue.net"" >> /etc/default/dropbear
 
 #install bbr dan optimasi kernel
-#wget https://raw.githubusercontent.com/bracoli/v4/main/ssh/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+#wget https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/tools/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 
 # blockir torrent
 iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
@@ -255,10 +255,10 @@ netfilter-persistent reload
 # download script
 cd /usr/bin
 # menu
-wget -O menu "https://raw.githubusercontent.com/hidessh99/projek10/main/menu/menu.sh"
-wget -O menu-vmess "https://raw.githubusercontent.com/bracoli/v4/main/menu/menu-vmess.sh"
-wget -O menu-vless "https://raw.githubusercontent.com/bracoli/v4/main/menu/menu-vless.sh"
-wget -O running "https://raw.githubusercontent.com/bracoli/v4/main/menu/running.sh"
+wget -O menu "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/tools/menu.sh"
+wget -O menu-vmess "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/tools/m-vmess.sh"
+wget -O menu-vless "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/tools/m-vless.sh"
+wget -O running "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/tools/running.sh"
 wget -O clearcache "https://raw.githubusercontent.com/bracoli/v4/main/menu/clearcache.sh"
 wget -O menu-trgo "https://raw.githubusercontent.com/bracoli/v4/main/menu/menu-trgo.sh"
 wget -O menu-trojan "https://raw.githubusercontent.com/bracoli/v4/main/menu/menu-trojan.sh"
@@ -415,7 +415,7 @@ rm -f /root/bbr.sh
 
 cd
 cd /usr/bin
-wget -O userdelexpired "https://gitlab.com/hidessh/baru/-/raw/main/userdelexpired.sh"
+wget -O userdelexpired "https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/tools/userdelexpired.sh"
 chmod +x userdelexpired
 
 
