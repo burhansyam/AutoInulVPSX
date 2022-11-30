@@ -121,3 +121,5 @@ echo -e "━━━━━━━━━━━━━━━━━━━━━━━�
 echo "" | tee -a /etc/log-create-user.log
 rm /etc/xray/$user-tls.json > /dev/null 2>&1
 rm /etc/xray/$user-none.json > /dev/null 2>&1
+read -n 1 -s -r -p "Press any key to back on menu"
+menu
