@@ -1,4 +1,5 @@
 # Auto Install Xray
+## Rekomendasi Ubuntu OS 20
 
 Update OS awal
 ```
