@@ -81,7 +81,7 @@ grpc=`cat<<EOF
       "id": "${user}",
       "aid": "0",
       "net": "grpc",
-      "path": "vmess-grpc",
+      "path": "/vmess-grpc",
       "type": "none",
       "host": "${domain}",
       "tls": "tls"
@@ -118,5 +118,8 @@ echo -e "━━━━━━━━━━━━━━━━━━━━━━━�
 echo -e "Link GRPC : ${vmesslink3}" | tee -a /etc/log-create-user.log
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
 echo "" | tee -a /etc/log-create-user.log
+
 rm /etc/xray/$user-tls.json > /dev/null 2>&1
 rm /etc/xray/$user-none.json > /dev/null 2>&1
+read -n 1 -s -r -p "Press any key to back on menu"
+menu
