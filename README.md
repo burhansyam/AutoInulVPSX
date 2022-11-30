@@ -4,9 +4,9 @@
 
 >wget https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/update-package.sh;chmod +x update-package.sh;./update-package.sh
 
-reboot
+>reboot
 
-wget https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
+`wget https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh`
 
 jika nginx error
 wget -O /etc/xray/xray.crt https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/xray.crt
