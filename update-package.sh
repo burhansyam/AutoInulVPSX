@@ -64,7 +64,7 @@ if [ "" = "$PKG_OK" ]; then
   sleep 1
   echo ""
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] If error you need.. to do this"
+  echo -e "[ ${tyblue}NOTES${NC} ] Jika error yg harus dilakukan,adalah:"
   sleep 1
   echo ""
   sleep 1
@@ -78,13 +78,13 @@ if [ "" = "$PKG_OK" ]; then
   sleep 1
   echo ""
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] After rebooting"
+  echo -e "[ ${tyblue}NOTES${NC} ] Setelah rebooting"
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] Then run this script again"
-  echo -e "[ ${tyblue}NOTES${NC} ] if you understand then tap enter now"
+  echo -e "[ ${tyblue}NOTES${NC} ] Eksekusi ulang script ini lagi"
+  echo -e "[ ${tyblue}NOTES${NC} ] Jika kamu paham klik enter sekarang"
   read
 else
-  echo -e "[ ${green}INFO${NC} ] Oke installed"
+  echo -e "[ ${green}INFO${NC} ] Oke Sip"
 fi
 
 ttet=`uname -r`
@@ -121,7 +121,7 @@ chmod 644 /root/.profile
 echo -e "[ ${green}INFO${NC} ] Preparing the install file"
 apt install git curl -y >/dev/null 2>&1
 apt install python -y >/dev/null 2>&1
-echo -e "[ ${green}INFO${NC} ] Aight good ... installation file is ready"
+echo -e "[ ${green}INFO${NC} ] Sak Joss e ... installasi siap dilanjutkan "
 sleep 2
 
 mkdir -p /var/lib/SIJA >/dev/null 2>&1
