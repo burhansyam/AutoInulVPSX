@@ -43,7 +43,7 @@ echo -e "$green Install Vmess,Trojan,Vless,Shadowsoks  $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/xrayv5.sh && chmod +x hideinst-xrayv5.sh && ./hideinst-xrayv5.sh
+wget https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/xray/xrayv5.sh && chmod +x xrayv5.sh && ./xrayv5.sh
 sleep 2
 clear
 
