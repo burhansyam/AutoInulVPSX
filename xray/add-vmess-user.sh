@@ -52,7 +52,7 @@ asu=`cat<<EOF
       "id": "${user}",
       "aid": "0",
       "net": "ws",
-      "path": "/worryfree",
+      "path": "/kuota-habis/",
       "type": "none",
       "host": "${domain}",
       "tls": "tls"
@@ -67,9 +67,9 @@ ask=`cat<<EOF
       "id": "${user}",
       "aid": "0",
       "net": "ws",
-      "path": "/worryfree",
+      "path": "/kuota-habis/",
       "type": "none",
-      "host": "tsel.me",
+      "host": "myorbit.id",
       "tls": "none"
 }
 EOF`
