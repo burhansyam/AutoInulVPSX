@@ -14,9 +14,9 @@ wget https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/update-packa
 ```
 reboot
 ```
-# Lanjut Install VPS
+# Lanjut Install Script di VPS
 ```
-wget https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh`
+wget https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
 ```
 # Jika nginx error
 ```
