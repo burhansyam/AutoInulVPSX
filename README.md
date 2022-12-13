@@ -28,16 +28,25 @@ service nginx restart
 # Edit manual sesuai kebutuhan
 
 edit domain manual
+```
 nano /var/lib/scrz-prem/ipvps.conf
+```
 edit config xray
+```
 nano /etc/xray/config.json
+```
 edit add user vlsee
+```
 nano /usr/bin/add-vless
+```
 edit add user vmess
+```
 nano /usr/bin/add-ws
+```
 edit nginx
+```
 nano /etc/nginx/conf.d/xray.conf
-
+```
 #Khusus VPS ATHA ketika kena limit IX
 ```
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.ori
