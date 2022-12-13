@@ -38,8 +38,8 @@ echo $cipher:$uuid > /tmp/log
 shadowsocks_base64=$(cat /tmp/log)
 echo -n "${shadowsocks_base64}" | base64 > /tmp/log1
 shadowsocks_base64e=$(cat /tmp/log1)
-shadowsockslink="ss://${shadowsocks_base64e}@$domain:$tls?plugin=xray-plugin;mux=0;path=/hidessh-ss-ws;host=$domain;tls#${user}"
-shadowsockslink1="ss://${shadowsocks_base64e}@$domain:$tls?plugin=xray-plugin;mux=0;serviceName=hidessh-ss-grpc;host=$domain;tls#${user}"
+shadowsockslink="ss://${shadowsocks_base64e}@$domain:$tls?plugin=xray-plugin;mux=0;path=/ss-ws;host=$domain;tls#${user}"
+shadowsockslink1="ss://${shadowsocks_base64e}@$domain:$tls?plugin=xray-plugin;mux=0;serviceName=ss-grpc;host=$domain;tls#${user}"
 systemctl restart xray
 rm -rf /tmp/log
 rm -rf /tmp/log1
@@ -110,7 +110,7 @@ ssws=$(cat <<ACCOUNT
           "headers": {
             "Host": "$domain"
           },
-          "path": "/hidessh-ss-ws"
+          "path": "/ss-ws"
         }
       },
       "tag": "proxy"
@@ -211,7 +211,7 @@ ssgrpc=$(cat <<ACCOUNT
       "streamSettings": {
         "grpcSettings": {
           "multiMode": true,
-          "serviceName": "hidessh-ss-grpc"
+          "serviceName": "ss-grpc"
         },
         "network": "grpc",
         "security": "tls",
@@ -268,7 +268,7 @@ result=$(cat <<RESULT
   "port": "$tls",
   "method": "aes-128-gcm",
   "exp": "$exp",
-  "path": "/hidessh-ss-ws"
+  "path": "/ss-ws"
 }
 RESULT
 )
