@@ -39,10 +39,18 @@ edit nginx
 nano /etc/nginx/conf.d/xray.conf
 
 #Khusus VPS ATHA ketika kena limit IX
-`sudo vi /etc/apt/sources.list`
-
-`deb http://kartolo.sby.datautama.net.id/ubuntu/ bionic main restricted universe multiverse
+```
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.ori
+```
+Lanjut
+```
+sudo vi /etc/apt/sources.list
+```
+Tambahkan
+```
+deb http://kartolo.sby.datautama.net.id/ubuntu/ bionic main restricted universe multiverse
 deb http://kartolo.sby.datautama.net.id/ubuntu/ bionic-updates main restricted universe multiverse
 deb http://kartolo.sby.datautama.net.id/ubuntu/ bionic-security main restricted universe multiverse
 deb http://kartolo.sby.datautama.net.id/ubuntu/ bionic-backports main restricted universe multiverse
-deb http://kartolo.sby.datautama.net.id/ubuntu/ bionic-proposed main restricted universe multiverse`
+deb http://kartolo.sby.datautama.net.id/ubuntu/ bionic-proposed main restricted universe multiverse
+```
