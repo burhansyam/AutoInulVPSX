@@ -53,7 +53,7 @@ sudo cp /etc/apt/sources.list /etc/apt/sources.list.ori
 ```
 Lanjut
 ```
-sudo vi /etc/apt/sources.list
+sudo nano /etc/apt/sources.list
 ```
 Tambahkan
 ```
