@@ -53,6 +53,10 @@ sudo cp /etc/apt/sources.list /etc/apt/sources.list.ori
 ```
 Lanjut
 ```
+rm /etc/apt/sources.list
+```
+Lalu buat baru
+```
 sudo nano /etc/apt/sources.list
 ```
 Ubuntu 18 Tambahkan
