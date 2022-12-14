@@ -55,11 +55,20 @@ Lanjut
 ```
 sudo nano /etc/apt/sources.list
 ```
-Tambahkan
+Ubuntu 18 Tambahkan
 ```
 deb http://kartolo.sby.datautama.net.id/ubuntu/ bionic main restricted universe multiverse
 deb http://kartolo.sby.datautama.net.id/ubuntu/ bionic-updates main restricted universe multiverse
 deb http://kartolo.sby.datautama.net.id/ubuntu/ bionic-security main restricted universe multiverse
 deb http://kartolo.sby.datautama.net.id/ubuntu/ bionic-backports main restricted universe multiverse
 deb http://kartolo.sby.datautama.net.id/ubuntu/ bionic-proposed main restricted universe multiverse
+```
+
+Ubuntu 20 tambahkan 
+```
+deb http://kartolo.sby.datautama.net.id/ubuntu/ focal main restricted universe multiverse
+deb http://kartolo.sby.datautama.net.id/ubuntu/ focal-updates main restricted universe multiverse
+deb http://kartolo.sby.datautama.net.id/ubuntu/ focal-security main restricted universe multiverse
+deb http://kartolo.sby.datautama.net.id/ubuntu/ focal-backports main restricted universe multiverse
+deb http://kartolo.sby.datautama.net.id/ubuntu/ focal-proposed main restricted universe multiverse
 ```
