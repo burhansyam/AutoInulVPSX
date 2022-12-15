@@ -46,8 +46,8 @@ sed -i '/#vmessgrpc$/a\### '"$user $exp"'\
 asu=`cat<<EOF
       {
       "v": "2",
-      "ps": "${user}",
-      "add": "${domain}",
+      "ps": "AkiLped_${user}",
+      "add": "104.18.2.2",
       "port": "443",
       "id": "${user}",
       "aid": "0",
@@ -61,7 +61,7 @@ EOF`
 ask=`cat<<EOF
       {
       "v": "2",
-      "ps": "${user}",
+      "ps": "Orbit_${user}",
       "add": "${domain}",
       "port": "80",
       "id": "${user}",
@@ -76,7 +76,7 @@ EOF`
 grpc=`cat<<EOF
       {
       "v": "2",
-      "ps": "Orbit_${user}",
+      "ps": "${user}",
       "add": "${domain}",
       "port": "443",
       "id": "${user}",
@@ -112,9 +112,9 @@ echo -e "Network : ws" | tee -a /etc/log-create-user.log
 echo -e "Path : /kuota-habis/" | tee -a /etc/log-create-user.log
 echo -e "ServiceName : vmess-grpc" | tee -a /etc/log-create-user.log
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
-echo -e "Link TLS : ${vmesslink1}" | tee -a /etc/log-create-user.log
+echo -e "Link Akrab iLped : ${vmesslink1}" | tee -a /etc/log-create-user.log
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
-echo -e "Link non-TLS : ${vmesslink2}" | tee -a /etc/log-create-user.log
+echo -e "Link Opok Orbit : ${vmesslink2}" | tee -a /etc/log-create-user.log
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
 echo -e "Link GRPC : ${vmesslink3}" | tee -a /etc/log-create-user.log
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
