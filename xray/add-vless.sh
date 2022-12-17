@@ -45,7 +45,7 @@ sed -i '/#vless$/a\#& '"$user $exp"'\
 },{"id": "'""$user""'","email": "'""$user""'"' /etc/xray/config.json
 sed -i '/#vlessgrpc$/a\#& '"$user $exp"'\
 },{"id": "'""$user""'","email": "'""$user""'"' /etc/xray/config.json
-vlesslink1="vless://${user}@104.18.2.2:$tls?sni=${domain}&host=${domain}&type=ws&security=tls&path=%2Fworryfree&encryption=none#Akrilped_${user}"
+vlesslink1="vless://${user}@104.18.2.2:$tls?sni=${domain}&host=${domain}&type=ws&security=tls&path=%2Fworryfree&encryption=none#Pendidikan_${user}"
 vlesslink2="vless://${user}@${domain}:$none?host=tsel.me&path=/worryfree&encryption=none&type=ws#Opok_${user}"
 vlesslink3="vless://${user}@104.18.23.187:$none?sni=${domain}&host=${domain}&type=ws&security=none&path=%2Fworryfree&encryption=none#GameMax${user}"
 #vlesslink3="vless://${user}@${domain}:$tls?mode=gun&security=tls&encryption=none&type=grpc&serviceName=vless-grpc&sni=google.com#${user}"
@@ -64,7 +64,7 @@ echo -e "Network : ws" | tee -a /etc/log-create-user.log
 echo -e "Path : /worryfree" | tee -a /etc/log-create-user.log
 #echo -e "Path : /vless-grpc" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Link Akrab & Pendidikan : ${vlesslink1}" | tee -a /etc/log-create-user.log
+echo -e "Link Tsel Pendidikan : ${vlesslink1}" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Link Opok : ${vlesslink2}" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
