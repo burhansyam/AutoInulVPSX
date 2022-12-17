@@ -48,7 +48,7 @@ sed -i '/#vlessgrpc$/a\#& '"$user $exp"'\
 vlesslink1="vless://${user}@104.18.2.2:$tls?sni=${domain}&host=${domain}&type=ws&security=tls&path=%2Fworryfree&encryption=none#Pendidikan_${user}"
 vlesslink2="vless://${user}@${domain}:$none?host=tsel.me&path=/worryfree&encryption=none&type=ws#Opok_${user}"
 vlesslink3="vless://${user}@104.18.23.187:$none?sni=${domain}&host=${domain}&type=ws&security=none&path=%2Fworryfree&encryption=none#GameMax${user}"
-#vlesslink3="vless://${user}@${domain}:$tls?mode=gun&security=tls&encryption=none&type=grpc&serviceName=vless-grpc&sni=google.com#${user}"
+vlesslink4="vless://burdo1@104.17.2.81:$tls?host=${domain}&path=%2Fworryfree&type=ws&encryption=none&security=tls&sni=${domain}#Akrab_{user}"
 systemctl restart xray
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
@@ -69,6 +69,8 @@ echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━�
 echo -e "Link Opok : ${vlesslink2}" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Link GameMax : ${vlesslink3}" | tee -a /etc/log-create-user.log
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "Link XL Akrab : ${vlesslink4}" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Expired On : $exp" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
