@@ -138,7 +138,7 @@ cat > /etc/xray/config.json << END
        "streamSettings":{
          "network": "ws",
             "wsSettings": {
-                "path": "/kuota-habis/"
+                "path": "/vmess"
           }
         }
      },
@@ -159,7 +159,7 @@ cat > /etc/xray/config.json << END
        "streamSettings":{
            "network": "ws",
            "wsSettings": {
-               "path": "/bro"
+               "path": "/trojan-ws"
             }
          }
      },
@@ -382,7 +382,8 @@ cat >/etc/nginx/conf.d/xray.conf <<EOF
              listen [::]:80;
              listen 443 ssl http2 reuseport;
              listen [::]:443 http2 reuseport;	
-             server_name $domain;
+             #server_name $domain;
+             server_name 127.0.0.1 localhost;
              ssl_certificate /etc/xray/xray.crt;
              ssl_certificate_key /etc/xray/xray.key;
              ssl_ciphers EECDH+CHACHA20:EECDH+CHACHA20-draft:EECDH+ECDSA+AES128:EECDH+aRSA+AES128:RSA+AES128:EECDH+ECDSA+AES256:EECDH+aRSA+AES256:RSA+AES256:EECDH+ECDSA+3DES:EECDH+aRSA+3DES:RSA+3DES:!MD5;
@@ -390,8 +391,7 @@ cat >/etc/nginx/conf.d/xray.conf <<EOF
              root /home/vps/public_html;
         }
 EOF
-sed -i '$ ilocation = /worryfree' /etc/nginx/conf.d/xray.conf
-sed -i '$ i{' /etc/nginx/conf.d/xray.conf
+sed -i '$ ilocation = /worryfree {' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_redirect off;' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_pass http://127.0.0.1:14016;' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_http_version 1.1;' /etc/nginx/conf.d/xray.conf
@@ -402,7 +402,7 @@ sed -i '$ iproxy_set_header Connection "upgrade";' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_set_header Host \$http_host;' /etc/nginx/conf.d/xray.conf
 sed -i '$ i}' /etc/nginx/conf.d/xray.conf
 
-sed -i '$ ilocation = /kuota-habis/' /etc/nginx/conf.d/xray.conf
+sed -i '$ ilocation = /vmess' /etc/nginx/conf.d/xray.conf
 sed -i '$ i{' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_redirect off;' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_pass http://127.0.0.1:23456;' /etc/nginx/conf.d/xray.conf
@@ -414,7 +414,7 @@ sed -i '$ iproxy_set_header Connection "upgrade";' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_set_header Host \$http_host;' /etc/nginx/conf.d/xray.conf
 sed -i '$ i}' /etc/nginx/conf.d/xray.conf
 
-sed -i '$ ilocation = /bro' /etc/nginx/conf.d/xray.conf
+sed -i '$ ilocation = /trojan-ws' /etc/nginx/conf.d/xray.conf
 sed -i '$ i{' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_redirect off;' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_pass http://127.0.0.1:25432;' /etc/nginx/conf.d/xray.conf
@@ -438,7 +438,7 @@ sed -i '$ iproxy_set_header Connection "upgrade";' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_set_header Host \$http_host;' /etc/nginx/conf.d/xray.conf
 sed -i '$ i}' /etc/nginx/conf.d/xray.conf
 
-sed -i '$ ilocation /' /etc/nginx/conf.d/xray.conf
+sed -i '$ ilocation /kuota-habis/' /etc/nginx/conf.d/xray.conf
 sed -i '$ i{' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_redirect off;' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_pass http://127.0.0.1:700;' /etc/nginx/conf.d/xray.conf
