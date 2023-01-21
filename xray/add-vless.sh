@@ -46,7 +46,7 @@ sed -i '/#vless$/a\#& '"$user $exp"'\
 sed -i '/#vlessgrpc$/a\#& '"$user $exp"'\
 },{"id": "'""$user""'","email": "'""$user""'"' /etc/xray/config.json
 vlesslink1="vless://${user}@104.18.2.2:$tls?sni=${domain}&host=${domain}&type=ws&security=tls&path=%2Fworryfree&encryption=none#iLPed_${user}_${domain}"
-vlesslink2="vless://${user}@${domain}:$none?host=z-p15.www.instagram.com&path=http%3A%2F%2Ftsel.me%2Fworryfree&encryption=none&type=ws#Opok_${user}_${domain}"
+vlesslink2="vless://${user}@${domain}:$none?host=z-p15.www.instagram.com&path=http%3A%2F%2Ftsel.me%2Fworryfree&encryption=none&type=ws#Opok_Tsel_${user}_${domain}"
 vlesslink3="vless://${user}@104.18.23.187:$none?sni=${domain}&host=${domain}&type=ws&security=none&path=%2Fworryfree&encryption=none#GameMax_${user}_${domain}"
 vlesslink4="vless://${user}@104.17.3.81:$tls?host=${domain}&path=%2Fworryfree&type=ws&encryption=none&security=tls&sni=${domain}#Akrab_${user}_${domain}"
 vlesslink5="vless://${user}@${domain}:$tls?host=${domain}&path=%2Fworryfree&type=ws&encryption=none&security=tls&sni=sogood.linefriends.com#ComboFlexS_${user}_${domain}"
