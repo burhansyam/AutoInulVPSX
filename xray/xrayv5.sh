@@ -138,7 +138,7 @@ cat > /etc/xray/config.json << END
        "streamSettings":{
          "network": "ws",
             "wsSettings": {
-                "path": "/worryfree"
+                "path": "/vmess"
           }
         }
      },
@@ -159,7 +159,7 @@ cat > /etc/xray/config.json << END
        "streamSettings":{
            "network": "ws",
            "wsSettings": {
-               "path": "/http://myorbit.id/kuota-habis"
+               "path": "/"
             }
          }
      },
