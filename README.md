@@ -88,5 +88,11 @@ cari baris GRUB_DEFAULT=0 lalu ganti dengan kode dibawah ini :
 ```
 GRUB_DEFAULT='Advanced options for Ubuntu>Ubuntu, with Linux 5.4.0-152-generic'
 ```
-lalu terakhir dan reboot
+lalu 
+```
 sudo update-grub
+```
+terakhir
+```
+reboot
+```
