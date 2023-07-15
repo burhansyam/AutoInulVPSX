@@ -35,7 +35,7 @@ edit config xray
 ```
 nano /etc/xray/config.json
 ```
-edit add user vlsee
+edit add user vless
 ```
 nano /usr/bin/add-vless
 ```
