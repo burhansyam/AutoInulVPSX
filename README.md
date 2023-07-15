@@ -76,3 +76,17 @@ deb http://kartolo.sby.datautama.net.id/ubuntu/ focal-security main restricted u
 deb http://kartolo.sby.datautama.net.id/ubuntu/ focal-backports main restricted universe multiverse
 deb http://kartolo.sby.datautama.net.id/ubuntu/ focal-proposed main restricted universe multiverse
 ```
+Khusus Untuk Idcloudhost
+```
+sudo cp /etc/default/grub /etc/default/grub.bak
+```
+lalu
+```
+sudo nano /etc/default/grub
+```
+cari baris GRUB_DEFAULT=0 lalu ganti dengan kode dibawah ini :
+```
+GRUB_DEFAULT='Advanced options for Ubuntu>Ubuntu, with Linux 5.4.0-152-generic'
+```
+lalu terakhir dan reboot
+sudo update-grub
