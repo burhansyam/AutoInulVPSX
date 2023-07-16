@@ -45,11 +45,11 @@ sed -i '/#vless$/a\#& '"$user $exp"'\
 },{"id": "'""$user""'","email": "'""$user""'"' /etc/xray/config.json
 sed -i '/#vlessgrpc$/a\#& '"$user $exp"'\
 },{"id": "'""$user""'","email": "'""$user""'"' /etc/xray/config.json
-vlesslink1="vless://${user}@104.18.2.2:$tls?sni=${domain}&host=${domain}&type=ws&security=tls&path=%2Fworryfree&encryption=none#iLPed_${user}_${domain}"
-vlesslink2="vless://${user}@${domain}:$none?host=z-p15.www.instagram.com&path=http%3A%2F%2Ftsel.me%2Fworryfree&encryption=none&type=ws#Opok_Tsel_${user}_${domain}"
-vlesslink3="vless://${user}@104.18.23.187:$none?sni=${domain}&host=${domain}&type=ws&security=none&path=%2Fworryfree&encryption=none#GameMax_${user}_${domain}"
-vlesslink4="vless://${user}@104.17.3.81:$tls?host=${domain}&path=%2Fworryfree&type=ws&encryption=none&security=tls&sni=${domain}#Akrab_${user}_${domain}"
-vlesslink5="vless://${user}@${domain}:$tls?host=${domain}&path=%2Fworryfree&type=ws&encryption=none&security=tls&sni=sogood.linefriends.com#ComboFlexS_${user}_${domain}"
+vlesslink1="vless://${user}@104.18.2.2:$tls?sni=${domain}&host=${domain}&type=ws&security=tls&path=%2Fkuota-habis%2F&encryption=none#iLPed_${domain}"
+vlesslink2="vless://${user}@${domain}:$none?host=myorbit.id&path=%2Fkuota-habis%2F&encryption=none&type=ws#Orbit_${domain}"
+vlesslink3="vless://${user}@104.18.23.187:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#GameMax_${domain}"
+vlesslink4="vless://${user}@104.18.1.196:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#Akrab_${domain}"
+vlesslink5="vless://${user}@sogood.linefriends.com:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#ComboFlexS_${domain}"
 systemctl restart xray
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
@@ -62,7 +62,7 @@ echo -e "port none TLS : $none" | tee -a /etc/log-create-user.log
 echo -e "id : ${user}" | tee -a /etc/log-create-user.log
 echo -e "Encryption : none" | tee -a /etc/log-create-user.log
 echo -e "Network : ws" | tee -a /etc/log-create-user.log
-echo -e "Path : /worryfree" | tee -a /etc/log-create-user.log
+echo -e "Path : /kuota-habis/" | tee -a /etc/log-create-user.log
 #echo -e "Path : /vless-grpc" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Injek Tsel Pendidikan : " | tee -a /etc/log-create-user.log
