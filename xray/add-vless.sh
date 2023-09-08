@@ -76,7 +76,6 @@ echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | te
 echo -e "Injek XL Akrab :  " | tee -a /etc/log-create-user.log
 echo -e "${vlesslink4}" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Injek XL ComboFlexS : " | tee -a /etc/log-create-user.log
 echo -e "@burhansyam | Exp : $exp" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo "" | tee -a /etc/log-create-user.log
