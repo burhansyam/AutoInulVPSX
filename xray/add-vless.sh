@@ -67,13 +67,13 @@ echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | te
 echo -e "Injek Tsel Pendidikan : " | tee -a /etc/log-create-user.log
 echo -e "${vlesslink1}" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Injek Opok :  " | tee -a /etc/log-create-user.log
+echo -e "Injek Orbit Opok :  " | tee -a /etc/log-create-user.log
 echo -e "${vlesslink2}" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Injek GameMax :  " | tee -a /etc/log-create-user.log
 echo -e "${vlesslink3}" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Injek XL Akrab :  " | tee -a /etc/log-create-user.log
+echo -e "Injek XL Combo + Vision :  " | tee -a /etc/log-create-user.log
 echo -e "${vlesslink4}" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "@burhansyam | Exp : $exp" | tee -a /etc/log-create-user.log
