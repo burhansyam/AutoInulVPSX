@@ -48,8 +48,7 @@ sed -i '/#vlessgrpc$/a\#& '"$user $exp"'\
 vlesslink1="vless://${user}@104.18.2.2:$tls?sni=${domain}&host=${domain}&type=ws&security=tls&path=%2Fkuota-habis%2F&encryption=none#iLPed_${domain}"
 vlesslink2="vless://${user}@${domain}:$none?host=myorbit.id&path=%2Fkuota-habis%2F&encryption=none&type=ws#Orbit_${domain}"
 vlesslink3="vless://${user}@104.18.23.187:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#GameMax_${domain}"
-vlesslink4="vless://${user}@104.18.1.196:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#Akrab_${domain}"
-vlesslink5="vless://${user}@sogood.linefriends.com:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#ComboFlexS_${domain}"
+vlesslink4="vless://${user}@vision.ponjong.my.id:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#XL_Vision_${domain}"
 systemctl restart xray
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
@@ -78,8 +77,6 @@ echo -e "Injek XL Akrab :  " | tee -a /etc/log-create-user.log
 echo -e "${vlesslink4}" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Injek XL ComboFlexS : " | tee -a /etc/log-create-user.log
-echo -e "${vlesslink5}" | tee -a /etc/log-create-user.log
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "@burhansyam | Exp : $exp" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo "" | tee -a /etc/log-create-user.log
