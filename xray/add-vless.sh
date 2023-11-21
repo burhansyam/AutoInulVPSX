@@ -45,10 +45,11 @@ sed -i '/#vless$/a\#& '"$user $exp"'\
 },{"id": "'""$user""'","email": "'""$user""'"' /etc/xray/config.json
 sed -i '/#vlessgrpc$/a\#& '"$user $exp"'\
 },{"id": "'""$user""'","email": "'""$user""'"' /etc/xray/config.json
-vlesslink1="vless://${user}@104.18.2.2:$tls?sni=${domain}&host=${domain}&type=ws&security=tls&path=%2Fkuota-habis%2F&encryption=none#iLPed_${domain}"
+vlesslink1="vless://${user}@104.18.2.2:$tls?sni=${domain}&host=${domain}&type=ws&security=tls&path=%2Fkuota-habis%2F&encryption=none#Tsel_iLPed_${domain}"
 vlesslink2="vless://${user}@${domain}:$none?host=myorbit.id&path=%2Fkuota-habis%2F&encryption=none&type=ws#Orbit_${domain}"
-vlesslink3="vless://${user}@104.18.23.187:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#GameMax_${domain}"
+vlesslink3="vless://${user}@104.18.23.187:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#Tsel_GameMax_${domain}"
 vlesslink4="vless://${user}@vision.ponjong.my.id:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#XL_Vision_${domain}"
+vlesslink5="vless://${user}@liveon.ponjong.my.id:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#LiveOn_${domain}"
 systemctl restart xray
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
@@ -73,8 +74,11 @@ echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | te
 echo -e "Injek GameMax :  " | tee -a /etc/log-create-user.log
 echo -e "${vlesslink3}" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Injek XL Combo + Vision :  " | tee -a /etc/log-create-user.log
+echo -e "Injek XL Vision + :  " | tee -a /etc/log-create-user.log
 echo -e "${vlesslink4}" | tee -a /etc/log-create-user.log
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "Injek LiveOn :  " | tee -a /etc/log-create-user.log
+echo -e "${vlesslink5}" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "@burhansyam | Exp : $exp" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
