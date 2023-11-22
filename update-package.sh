@@ -132,7 +132,7 @@ echo -e "$green          Install Paket              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget -q https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/kontool.sh;chmod +x tools.sh;./tools.sh
 cd
 rm tools.sh
 clear
