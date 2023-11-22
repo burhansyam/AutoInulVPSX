@@ -18,8 +18,8 @@ echo "Checking VPS"
 clear
 apt install jq curl -y
 
-###DOM#AIN=ipsvr.my.id
-DOMAIN=ipsvr.me
+###DOM#AIN=bkad.cloud
+DOMAIN=bkad.cloud
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c6)
 SUB_DOMAIN=${sub}.bkad.cloud
 CF_ID=me@burhansyam.com
