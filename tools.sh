@@ -19,7 +19,7 @@ fi
 
 
 echo "Tools install...!"
-echo "Progress..."
+echo "Progress cok..."
 sleep 2
 
 sudo apt update -y
