@@ -134,7 +134,7 @@ sleep 2
 clear
 wget -q https://raw.githubusercontent.com/burhansyam/AutoInulVPSX/main/kontool.sh;chmod +x kontool.sh;./kontool.sh
 cd
-rm tools.sh
+rm kontool.sh
 clear
 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
