@@ -9,7 +9,7 @@ green='\e[0;32m'
 NC='\e[0m'
 
 clear
-source /var/lib/scrz-prem/ipvps.conf
+# source /var/lib/scrz-prem/ipvps.conf
 if [[ "$IP" = "" ]]; then
 domain=$(cat /etc/xray/domain)
 else
@@ -50,7 +50,9 @@ vlesslink2="vless://${user}@${domain}:$none?host=myorbit.id&path=%2Fkuota-habis%
 vlesslink3="vless://${user}@104.18.23.187:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#Tsel_GameMax_${domain}"
 vlesslink4="vless://${user}@104.18.225.52:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#XL_Vision_${domain}"
 vlesslink5="vless://${user}@104.17.3.81:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#XL_Edu_${domain}"
-vlesslink6="vless://${user}@104.16.51.111:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#LiveOn_${domain}"
+vlesslink6="vless://${user}@quiz.int.vidio.com:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#XL_Vidio_${domain}"
+vlesslink7="vless://${user}@${domain}:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=open.spotify.com#XL_Spotify_${domain}"
+vlesslink8="vless://${user}@104.16.51.111:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#LiveOn_${domain}"
 systemctl restart xray
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
@@ -81,8 +83,14 @@ echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | te
 echo -e "Injek XL Edu & Con :  " | tee -a /etc/log-create-user.log
 echo -e "${vlesslink5}" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Injek LiveOn :  " | tee -a /etc/log-create-user.log
+echo -e "Injek XL Vidio :  " | tee -a /etc/log-create-user.log
 echo -e "${vlesslink6}" | tee -a /etc/log-create-user.log
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "Injek XL Spotify :  " | tee -a /etc/log-create-user.log
+echo -e "${vlesslink7}" | tee -a /etc/log-create-user.log
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "Injek LiveOn :  " | tee -a /etc/log-create-user.log
+echo -e "${vlesslink8}" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "@burhansyam | Exp : $exp" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
