@@ -51,7 +51,7 @@ vlesslink3="vless://${user}@104.18.23.187:$tls?host=${domain}&path=%2Fkuota-habi
 vlesslink4="vless://${user}@104.18.225.52:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#XL_Vision_${domain}"
 vlesslink5="vless://${user}@104.17.3.81:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#XL_Edu_${domain}"
 vlesslink6="vless://${user}@quiz.int.vidio.com:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#XL_Vidio_${domain}"
-vlesslink7="vless://${user}@${domain}:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=open.spotify.com#XL_Spotify_${domain}"
+vlesslink7="vless://${user}@investors.spotify.com:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#XL_Spotify_${domain}"
 vlesslink8="vless://${user}@104.16.51.111:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#LiveOn_${domain}"
 systemctl restart xray
 clear
