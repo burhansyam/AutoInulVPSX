@@ -78,16 +78,11 @@ deb http://kartolo.sby.datautama.net.id/ubuntu/ focal-proposed main restricted u
 ```
 Atau U20
 ```
-deb http://mirror.unej.ac.id/ubuntu/ focal main restricted
-deb http://mirror.unej.ac.id/ubuntu/ focal-updates main restricted
-deb http://mirror.unej.ac.id/ubuntu/ focal universe
-deb http://mirror.unej.ac.id/ubuntu/ focal-updates universe
-deb http://mirror.unej.ac.id/ubuntu/ focal multiverse
-deb http://mirror.unej.ac.id/ubuntu/ focal-updates multiverse
-deb http://mirror.unej.ac.id/ubuntu/ focal-backports main restricted universe multiverse
-deb http://mirror.unej.ac.id/ubuntu/ focal-security main restricted
-deb http://mirror.unej.ac.id/ubuntu/ focal-security universe
-deb http://mirror.unej.ac.id/ubuntu/ focal-security multiverse
+deb http://mirror.biznetgio.com/ubuntu/ focal main restricted universe multiverse
+deb http://mirror.biznetgio.com/ubuntu/ focal-updates main restricted universe multiverse
+deb http://mirror.biznetgio.com/ubuntu/ focal-security main restricted universe multiverse
+deb http://mirror.biznetgio.com/ubuntu/ focal-backports main restricted universe multiverse
+deb http://mirror.biznetgio.com/ubuntu/ focal-proposed main restricted universe multiverse
 ```
 Khusus Untuk Idcloudhost
 ```
