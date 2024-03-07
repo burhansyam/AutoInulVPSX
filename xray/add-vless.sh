@@ -45,14 +45,14 @@ sed -i '/#vless$/a\#& '"$user $exp"'\
 },{"id": "'""$user""'","email": "'""$user""'"' /etc/xray/config.json
 sed -i '/#vlessgrpc$/a\#& '"$user $exp"'\
 },{"id": "'""$user""'","email": "'""$user""'"' /etc/xray/config.json
-vlesslink1="vless://${user}@104.18.2.2:$tls?sni=${domain}&host=${domain}&type=ws&security=tls&path=%2Fkuota-habis%2F&encryption=none#Tsel_iLPed_${domain}"
+vlesslink1="vless://${user}@104.18.25.139:$tls?sni=${domain}&host=${domain}&type=ws&security=tls&path=%2Fkuota-habis%2F&encryption=none#Tsel_Edu_${domain}"
 vlesslink2="vless://${user}@${domain}:$none?host=myorbit.id&path=%2Fkuota-habis%2F&encryption=none&type=ws#Orbit_${domain}"
 vlesslink3="vless://${user}@104.18.23.187:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#Tsel_GameMax_${domain}"
 vlesslink4="vless://${user}@104.18.225.52:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#XL_Vision_${domain}"
 vlesslink5="vless://${user}@104.17.3.81:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#XL_Edu_${domain}"
-vlesslink6="vless://${user}@quiz.int.vidio.com:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#XL_Vidio_${domain}"
+vlesslink6="vless://${user}@quiz.staging.vidio.com:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#XL_Vidio_${domain}"
 vlesslink7="vless://${user}@investors.spotify.com:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#XL_Spotify_${domain}"
-vlesslink8="vless://${user}@104.16.51.111:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#LiveOn_${domain}"
+vlesslink8="vless://${user}@cvs-deo.shopeemobile.com:$tls?host=${domain}&path=%2Fkuota-habis%2F&type=ws&encryption=none&security=tls&sni=${domain}#XL_150GB_${domain}"
 systemctl restart xray
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
