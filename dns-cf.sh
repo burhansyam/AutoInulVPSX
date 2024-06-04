@@ -21,9 +21,9 @@ apt install jq curl -y
 ###DOM#AIN=bkad.cloud
 DOMAIN=bkad.cloud
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c6)
-SUB_DOMAIN=${sub}.bkad.cloud
+SUB_DOMAIN=${sub}.ponjong.my.id
 CF_ID=me@burhansyam.com
-CF_KEY=69e79fc40c601d1e4cd5a8c4f19af2b9a45dc
+CF_KEY=79149c94af3e3a4e0518cfa6cd97732fddb9a
 
 ##SUB_DOMAIN=${sub}.installer.my.id
 ##CF_ID=senowahyu62@gmail.com
